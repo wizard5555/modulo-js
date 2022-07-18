@@ -1,5 +1,13 @@
 //document.body.innerHTML = "Olá mundo!";
 
 function cadastro() {
-    alert('Abrindo página de cadastro');
+    document.getElementById('conteudo').innerHTML = "...Cadastro...";
+}
+
+function listar() {
+    document.getElementById('conteudo').innerHTML = "...Listagem...";
+}
+
+function relatorio() {
+    document.getElementById('conteudo').innerHTML = "...Relatórios...";
 }
