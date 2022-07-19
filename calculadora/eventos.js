@@ -1,6 +1,11 @@
 const VISOR = document.getElementById('visor')
 
 function selecionarNumero(numero) {
+
+    if (VISOR.innerHTML.length >= 9) {
+        return;
+    }
+
     if (VISOR.innerHTML == 0) {
        VISOR.innerHTML = numero;
     } else {
