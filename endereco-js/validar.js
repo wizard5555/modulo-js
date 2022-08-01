@@ -1,5 +1,9 @@
 const CEP = document.getElementById('cep');
 const LOGRADOURO = document.getElementById('logradouro');
+const NUMERO = document.getElementById('numero');
+const BAIRRO = document.getElementById('bairro');
+const CIDADE = document.getElementById('cidade');
+const UF = document.getElementById('uf');
 
 function validar() {
     // Interromper o envio dos dados
