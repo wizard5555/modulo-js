@@ -1,3 +1,6 @@
 CEP.addEventListener('blur', function () {
-    alert('Funcionou!');
+   LOGRADOURO.value = 'Rua X';
+   BAIRRO.value = 'Aldeota';
+   CIDADE.value = 'FortalCity';
+   UF.value = 'CE';
 })
