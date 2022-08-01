@@ -7,7 +7,10 @@ let dados = [
     'Ruby',
     'Lua',
     'JavaScript',
-    'GoLang'
+    'GoLang',
+    'HTML',
+    'CSS',
+    'TypeScript',
 ]
 
 dados.forEach(function (nome) {
