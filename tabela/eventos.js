@@ -70,4 +70,18 @@ bebidas.forEach( function (cadaBebida) {
             </td>
         <tr>
     `; //Fecha a crase
+});
+
+const BUSCA = document.getElementById('busca');
+
+BUSCA.addEventListener('keyup', function () {
+    for (let i in TABELA.children) {
+        let cadaLinha = TABELA.children[i];
+    
+        if (cadaLinha.innerHTML.includes(BUSCA.value) ) {
+            cadaLinha.style.display = '';
+        } else {
+            cadaLinha.style.display = 'none';
+        }
+    }
 })
