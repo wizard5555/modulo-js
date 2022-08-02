@@ -64,6 +64,10 @@ bebidas.forEach( function (cadaBebida) {
             <td>${cadaBebida.nome}</td>
             <td>${cadaBebida.descricao}</td>
             <td>${cadaBebida.quantidade}</td>
+            <td>
+                <button class="btn btn-warning btn-sm">Editar</button>
+                <button class="btn btn-danger btn-sm">Excluir</button>
+            </td>
         <tr>
     `; //Fecha a crase
 })
