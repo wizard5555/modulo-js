@@ -58,3 +58,12 @@ let bebidas = [
 
 const TABELA = document.getElementById('tabela');
 
+bebidas.forEach( function (cadaBebida) {
+    TABELA.innerHTML += `
+        <tr>
+            <td>${cadaBebida.nome}</td>
+            <td>${cadaBebida.descricao}</td>
+            <td>${cadaBebida.quantidade}</td>
+        <tr>
+    `; //Fecha a crase
+})
