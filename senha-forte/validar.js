@@ -2,12 +2,19 @@ const SENHA = document.getElementById('senha');
 const P_SENHA = document.getElementById('senha-tamanho');
 const DIV_PROGRESSO = document.getElementById('senha-progresso');
 
+function alterarFeedback(frase, largura, cor) {
+    P_SENHA.innerHTML = frase;
+    DIV_PROGRESSO.style.width = largura;
+    DIV_PROGRESSO.style.backgroundColor = cor;
+}
+
 function validarSenha() {
     if (SENHA.value.length < 8 ) {
-       P_SENHA.innerHTML = 'Senha inválida!';
-       DIV_PROGRESSO.style.width = '5%';
-       DIV_PROGRESSO.style.backgroundColor = 'red';
-       return;
+    //    P_SENHA.innerHTML = 'Senha inválida!';
+    //    DIV_PROGRESSO.style.width = '5%';
+    //    DIV_PROGRESSO.style.backgroundColor = 'red';
+        alterarFeedback('Senha inválida', '1%', 'red');
+        return;
     }
 
     if (SENHA.value.length >= 8 ) {
