@@ -10,7 +10,8 @@ function validarSenha() {
     }
     if (true === isNaN(SENHA.value.length > 8 && SENHA.value.length < 12)) {
         P_SENHA.innerHTML = 'Senha média!';
-    } else {
+    }
+    if (SENHA.value.length){
         P_SENHA.innerHTML = 'Senha forte!!!';
     }
 }
