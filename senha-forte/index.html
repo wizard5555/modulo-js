@@ -15,9 +15,9 @@
         </div>
         <div class="col">
             <div class="card card-body">
-                <form action="">
-                    <input type="text" placeholder="Nome" class="form-control">
-                    <input type="email" placeholder="Email" class="form-control">
+                <form action="" onsubmit="salvar()">
+                    <input type="text" id="nome" placeholder="Nome" class="form-control">
+                    <input type="email" id="email" placeholder="Email" class="form-control">
                     <input type="password" id="senha" placeholder="Senha" onkeyup="validarSenha()" class="form-control">
                     
                     <p id="senha-tamanho"></p>
