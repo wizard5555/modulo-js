@@ -2,6 +2,9 @@ const TABELA_ALUNOS = document.getElementById('tabela-alunos');
 // const TABELA_ALUNOS = document.getElementById('#tabela-alunos');
 // const TABELA_ALUNOS = document.getElementById('[id="tabela-alunos"]');
 
+const CONTEUDO_NOVO = document.getElementById('conteudo-novo');
+const CONTEUDO_LISTAR = document.getElementById('conteudo-listar');
+
 alunos.map(function (cadaAluno) {
     TABELA_ALUNOS.innerHTML += `
     <tr>
@@ -17,16 +20,17 @@ alunos.map(function (cadaAluno) {
 });
 
 function alterarConteudo(conteudo) {
-   if (conteudo == 'listar') {
-    //mostrar tabela
-    // esconder form
-    window.location.pathname += '?listar';
+   if (conteudo === 'listar') {
+    CONTEUDO_LISTAR.style.display = '';
+    // CONTEUDO_NOVO.style.display = 'none';
+    CONTEUDO_NOVO.classList.remove('form-animar');
+    window.history.pushState('null', 'null', '#listar');
    }
 
-   if (conteudo == 'novo') {
-    // mostrar form
-    // esconder tabela
-    window.location.pathname += '?novo' ;
+   if (conteudo === 'novo') {
+    CONTEUDO_LISTAR.style.display = 'none';
+    CONTEUDO_NOVO.classList.add('form-animar');
+    window.history.pushState(null, null, '#novo');
    }
 }
 

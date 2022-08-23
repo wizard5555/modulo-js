@@ -1,3 +1,15 @@
 body {
     background-color: #ddd;
 }
+
+.form-animar {
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    to {
+        background-color: blueviolet;
+    }
+}
