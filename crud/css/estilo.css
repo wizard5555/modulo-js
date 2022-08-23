@@ -2,14 +2,20 @@ body {
     background-color: #ddd;
 }
 
+#conteudo-novo {
+    opacity: 0;
+    transform: translateY(-40px);
+}
+
 .form-animar {
     animation-name: slide;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
 @keyframes slide {
     to {
-        background-color: blueviolet;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
